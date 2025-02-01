@@ -1,0 +1,17 @@
+.submit__button {
+  display: inline-block;
+  padding: 1.1rem 2rem;
+  background-color: var(--first-color);
+  color: #fff;
+  border-radius: 40px;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.submit__button:hover {
+  background-color: var(--first-color-hover);
+}

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..1000&display=swap');
+
+:root {
+  --header-height: 3.5rem;
+
+  --first-color: hsl(208, 92%, 54%);
+  --first-color-hover: hsl(208, 77%, 48%);
+  --light-first-color: hsl(208, 91%, 55%);
+
+  --title-color: hsl(228, 18%, 16%);
+  --light-title-color: #9ca7b6;
+  --text-color: hsl(228, 8%, 56%);
+  --body-color: hsl(0, 0%, 100%);
+  --shadow-color: hsla(228, 80%, 4%, .1);
+
+  --body-font: "Nunito Sans", serif;
+  --normal-font-size: .938rem;
+  --smaller-font-size: .75rem;
+  --tiny-font-size: .75rem;
+
+  --font-regular: 400;
+  --font-semi-bold: 600;
+
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+@media screen and (min-width: 1150px) {
+  :root {
+    --normal-font-size: 1rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: background-color .4s;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  all: unset;
+}
+
+body.dark,
+main.dark {
+  --first-color: hsl(228, 70%, 63%);
+  --title-color: hsl(228, 18%, 96%);
+  --text-color: hsl(228, 12%, 61%);
+  --body-color: hsl(228, 24%, 16%);
+  --shadow-color: hsla(228, 80%, 4%, .3);
+}
