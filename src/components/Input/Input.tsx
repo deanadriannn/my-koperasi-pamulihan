@@ -28,7 +28,10 @@ const Input = forwardRef<HTMLInputElement, InputProps>(({
         className="contact-input"
         onFocus={() => setIsFocus(true)}
         onBlur={() => setIsFocus(false)}
-        onChange={(e) => setIsEmpty(e.target.value === "")}
+        onChange={(e) => {
+          setIsEmpty(e.target.value === "")
+          props.onChange && props.onChange(e)
+        }}
       />
       <label>{label}</label>
       {icon && <span className="icon">{icon}</span>}

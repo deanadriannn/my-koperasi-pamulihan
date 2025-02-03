@@ -68,3 +68,20 @@ main.dark {
   --body-color: hsl(228, 24%, 16%);
   --shadow-color: hsla(228, 80%, 4%, .3);
 }
+
+.error_message {
+  color: red;
+}
+
+.table__table,
+.table__th,
+.table__td {
+  padding: 1rem;
+}
+
+.table__table {
+  background-color: var(--body-color);
+  box-shadow: 0 2px 24px var(--shadow-color);
+  border-radius: 1rem;
+  width: 100%;
+}

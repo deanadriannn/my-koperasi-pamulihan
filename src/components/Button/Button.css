@@ -1,5 +1,7 @@
-.submit__button {
-  display: inline-block;
+.button__style {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 1.1rem 2rem;
   background-color: var(--first-color);
   color: #fff;
@@ -12,6 +14,6 @@
   transition: .3s;
 }
 
-.submit__button:hover {
+.button__style:hover {
   background-color: var(--first-color-hover);
 }

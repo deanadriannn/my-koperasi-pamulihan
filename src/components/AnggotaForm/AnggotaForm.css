@@ -1,0 +1,12 @@
+.anggota_form__form_wrapper {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.anggota_form__input_wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}

@@ -16,7 +16,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
       disabled={disabled}
       ref={ref}
       {...props}
-      className="submit__button"
+      className={`button__style ${props.className}`}
     >
       {children}
     </button>
